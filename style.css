@@ -1,0 +1,342 @@
+    /* Core Styles */
+body{
+    margin: 0;
+    background-color: #000;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: firebrick;
+}
+::-webkit-scrollbar-thumb{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(102, 40, 40);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+.nav-collapse{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    z-index: 999;
+}
+
+.nav-collapse .nav-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.nav-title{ 
+    font-family: verdana;
+    margin: 5px 18px;
+}
+.nav-title a {
+    text-decoration: none;
+    color: rgb(165, 47, 47);
+}
+.nav-title a:hover{
+    color: rgb(102, 40, 40);
+}
+
+#btn{
+    cursor: pointer;
+    background-color: rgb(165, 47, 47);
+    border: none;
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.fas{
+    padding: 2px;
+    font-size: 18px;
+}
+
+.collapse-content{
+    margin-top: -12px;
+    display: none;
+    background-color: #fff;
+}
+.nav-collapse .collapse-content ul{
+    border-top: 1px solid #666;
+    list-style-type: none;
+    text-align: center;
+    padding: 4px;
+    margin: 10px;
+}
+.nav-collapse .collapse-content ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.nav-collapse .collapse-content ul li a:hover{
+    color: rgb(165, 47, 47);
+}
+hr{
+    margin-left: 40%;
+    margin-right: 40%;
+    border: 1px solid rgb(226, 29, 29);
+} 
+#showcase{
+    margin-top: 2em; 
+    text-align: center;
+    color: rgba(255, 255, 255, 0.753);
+    min-height: 500px;
+}
+#showcase .bg-image{
+    font-family: sans-serif;
+    position: absolute;
+    background: url('images/god_of_war.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    min-height: 500px;
+    color: #fff;
+    opacity: 0.7;
+}
+#showcase #showcase-title{
+    font-size: 2em;
+    padding-top:25px;
+}
+#showcase p{
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#showcase #btn{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(226, 29, 29);
+    border: 1px solid rgb(226, 29, 29);
+    border-radius: 10px;
+    padding: 10px;
+}
+#showcase #btn:hover{
+    background: rgb(131, 24, 24);
+    border: 1px solid rgb(131, 24, 24);
+}
+.content-wrap {
+    color: #fff;
+}
+#section-a .content-wrap{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 0.5em;
+}
+#section-a p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0em;
+    padding-bottom: 0.5em;
+    min-height: 250px;
+}
+#section-b{
+    margin: 0;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  min-height: 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(165, 47, 47);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#section-c .content-wrap{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+    min-height: 300px;
+}
+#section-c h1{
+    color: #000;
+}
+#section-c p {
+    font-size: 20px;
+    line-height: 30px;
+}
+#section-c .contact, #section-c .social{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+#section-c .social {
+    font-size: 50px;
+}
+#section-c .contact .social a{
+    text-decoration: none;
+}
+#section-c .contact .social a .fa-twitter{
+    color: rgb(29, 161, 242);
+}
+#section-c .contact .social a .fa-facebook{
+    color: rgb(59, 89, 152);
+}
+#section-c .contact .social a .fa-instagram{
+    color: rgb(251, 57, 88);
+}
+#section-c .contact .social a .fa-snapchat{
+    color: rgb(255, 252, 0);
+}
+.nav-full{
+    display: none;
+}
+#gall{
+    display: none;
+}
+@media(min-width:750px){
+    .nav-collapse{
+        display: none;
+    }
+    .nav-full{
+        display: block;
+    }
+    .nav-full-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-full-header #nav-full-title{
+        color: rgb(165, 47, 47);
+        font-family: verdana;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .nav-full-header ul{
+        list-style-type: none;
+        display: flex;
+        margin-top: 8px;
+    }
+    .nav-full-header ul li a{
+        color: rgba(255, 255, 255, 0.753);;
+        text-decoration: none;
+        padding: 7px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .nav-full-header ul li a:hover{
+        color: rgb(102, 40, 40);
+    }
+    #showcase{
+        margin-top: 0; 
+        min-height: 700px;
+    }
+    #showcase .bg-image{
+        top: 0;
+        min-height: 750px;
+        height: 100%;
+        width: 100%;
+    }
+    #showcase #showcase-title{
+        font-size: 3em; 
+        margin-top: 100px;
+    }
+    #showcase p{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0 10px;
+    }
+    #showcase #btn{
+        display: none;
+    }
+    #section-a p {
+        font-size: 23px;
+        padding: 0 15px;
+    }
+    #section-b{
+        display: none;
+    }
+    #gall{
+        display: block;
+    }
+    .image-container{
+        display: grid;
+        grid-template-columns: repeat(autofill,1fr);
+        grid-column-gap: 5px;
+        margin: 10px;
+        justify-content: center;
+    }
+    .gallery{
+    }
+    img {
+        width: 100%;
+        height: 100%;    
+    }
+}

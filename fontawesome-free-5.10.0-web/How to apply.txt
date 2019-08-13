@@ -1,0 +1,2 @@
+fab fa-BrandName - For brands 
+fas fa-SolidName - for solid
